@@ -1,10 +1,13 @@
 {
   "name": "shell-deploy",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "",
-  "main": "lib/index.js",
+  "main": "lib/shell.js",
   "directories": {
     "lib": "lib"
+  },
+  "bin": {
+    "shell-deploy": "lib/shell.js"
   },
   "scripts": {    
   },
