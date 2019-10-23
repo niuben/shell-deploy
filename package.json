@@ -1,18 +1,16 @@
 {
   "name": "shell-deploy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib"
   },
-  "scripts": {
-    "test": "sh ./lib/workflow.sh"
+  "scripts": {    
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "prompts": "^2.2.1",
+  "dependencies": {    
     "readline-sync": "^1.4.10",
     "shelljs": "^0.8.3"
   }
