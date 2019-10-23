@@ -48,7 +48,7 @@ function action(obj){
             shell.exec(obj.command);
         break;
         case "git-commit":
-            gitCommit();
+            gitCommit(obj);
         break;
     }
 }
@@ -70,13 +70,23 @@ function gitCommit(obj){
         return;
     }
     shell.exec("git add .");    
-    shell.exec("git commit -am 'commit'");
+
+    var msg = obj.content;
+    if(obj.content == undefined){
+        msg = read("Write commit message: ");
+    }
+
+    shell.exec("git commit -am '" + msg + "'");
     shell.exec("git push");
 }
 
 // 
 function confim(){
 
+}
+
+function read(title){
+    return readline.question(title)
 }
 
 // console.log(command);

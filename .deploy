@@ -14,7 +14,7 @@
         "source": "./test/test1/a.js",
         "dest": "./test/test2"
     }, {
-        "type": "git-commit"        
+        "type": "git-commit"               
     }], 
     "conf": {
         "master": "fes-stylelint",
