@@ -1,0 +1,23 @@
+{
+    "flow":[{
+        "type": "upload",
+        "ip": "10.152.81.208",
+        "user": "root",
+        "password": "8k9l0;-'",
+        "path": "/usr/local/nginx/html/qql.zhushou.sogou.com/code/static/",
+        "source": "./test/test1"
+    },{
+        "type": "command",
+        "command": "yarn run test"
+    }, {
+        "type": "copy",
+        "source": "./test/test1/a.js",
+        "dest": "./test/test2"
+    }, {
+        "type": "git-commit"        
+    }], 
+    "conf": {
+        "master": "fes-stylelint",
+        "isMerge": true        
+    }
+}
