@@ -88,8 +88,8 @@ API列表:
 ```js
 {
     "type": "upload",
-    "ip": "10.152.81.208",
-    "user": "root",
+    "host": "10.152.81.208",
+    "username": "root",
     "password": "8k9l0;-'",
     "path": "/usr/local/nginx/html/qql.zhushou.sogou.com/code/static/",
     "source": "./test/test1"
