@@ -9,12 +9,12 @@
   "bin": {
     "shell-deploy": "lib/shell.js"
   },
-  "scripts": {    
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC",
-  "dependencies": {    
+  "dependencies": {
     "readline-sync": "^1.4.10",
+    "scp2": "^0.5.0",
     "shelljs": "^0.8.3"
   }
 }
