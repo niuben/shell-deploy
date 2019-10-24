@@ -79,8 +79,8 @@ API列表:
 
 #### upload
 将文件上传到服务器上, 对应字段如下
-* ip: 服务器IP地址
-* user: 用户名
+* host: 服务器地址（可以是IP地址）
+* username: 用户名
 * password: 密码
 * path: 指定服务器上传路径
 * source: 需要上传的文件路径
