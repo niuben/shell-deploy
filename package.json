@@ -1,6 +1,6 @@
 {
   "name": "shell-deploy",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "description": "",
   "main": "lib/shell.js",
   "directories": {
