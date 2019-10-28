@@ -27,8 +27,8 @@ npm add shell-deploy
         "command": "yarn run test"
     },{
         "type": "upload",
-        "ip": "10.152.81.208",
-        "user": "root",
+        "host": "10.152.81.208",
+        "username": "root",
         "password": "8k9l0;-'",
         "path": "/usr/local/nginx/html/qql.zhushou.sogou.com/code/static/",
         "source": "./test/test1"
@@ -39,7 +39,7 @@ npm add shell-deploy
         "dest": "./test/test2"
     },{
         "type": "git-commit"    
-    }],    
+    }]  
 }
 ```
 
@@ -76,6 +76,9 @@ API列表:
 * cd 
 * git-pull
 * git-commit
+
+通用字段：
+* title: 说明当前步骤是什么
 
 #### upload
 将文件上传到服务器上, 对应字段如下
