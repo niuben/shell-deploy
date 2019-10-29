@@ -6,14 +6,14 @@
         "type": "upload",
         "ip": "10.152.81.208",
         "user": "root",
-        "password": "8k9l0;-'",
-        "path": "/usr/local/nginx/html/qql.zhushou.sogou.com/code/static/",
-        "source": "./test/test1"
+        "password": "******",
+        "path": "/usr/local/***",
+        "source": "./***"
     }], 
     "online": [{
         "type": "copy",
-        "source": "./test/test1/a.js",
-        "dest": "./test/test2"
+        "source": "./***",
+        "dest": "./test/"
     },{
         "type": "git-commit"    
     }],

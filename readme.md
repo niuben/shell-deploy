@@ -26,12 +26,12 @@ npm add shell-deploy
         "type": "command",
         "command": "yarn run test"
     },{
-        "type": "upload",
-        "host": "10.152.81.208",
-        "username": "root",
-        "password": "8k9l0;-'",
-        "path": "/usr/local/nginx/html/qql.zhushou.sogou.com/code/static/",
-        "source": "./test/test1"
+    "type": "upload",
+    "host": "10.152.81.208",
+    "username": "root",
+    "password": "****",
+    "path": "/usr/local/***",
+    "source": "./test/**"
     }], 
     "online": [{
         "type": "copy",
@@ -93,9 +93,9 @@ API列表:
     "type": "upload",
     "host": "10.152.81.208",
     "username": "root",
-    "password": "8k9l0;-'",
-    "path": "/usr/local/nginx/html/qql.zhushou.sogou.com/code/static/",
-    "source": "./test/test1"
+    "password": "****",
+    "path": "/usr/local/***",
+    "source": "./test/**"
 }
 ```
 
