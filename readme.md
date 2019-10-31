@@ -26,12 +26,12 @@ npm add shell-deploy
         "type": "command",
         "command": "yarn run test"
     },{
-    "type": "upload",
-    "host": "10.152.81.208",
-    "username": "root",
-    "password": "****",
-    "path": "/usr/local/***",
-    "source": "./test/**"
+        "type": "upload",
+        "host": "10.152.81.208",
+        "username": "root",
+        "password": "****",
+        "path": "/usr/local/***",
+        "source": "./test/**"
     }], 
     "online": [{
         "type": "copy",
@@ -39,7 +39,7 @@ npm add shell-deploy
         "dest": "./test/test2"
     },{
         "type": "git-commit"    
-    }]  
+    }]
 }
 ```
 
