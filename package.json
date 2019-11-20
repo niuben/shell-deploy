@@ -1,6 +1,6 @@
 {
   "name": "shell-deploy",
-  "version": "0.0.12",
+  "version": "0.1",
   "description": "",
   "main": "lib/shell.js",
   "directories": {
@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "prompts": "^2.3.0",
     "readline-sync": "^1.4.10",
     "scp2": "^0.5.0",
     "shelljs": "^0.8.3"

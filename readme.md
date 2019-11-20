@@ -147,10 +147,10 @@ API列表:
 #### git-commit 
 通过`git commit`提交代码
 
-* content: 提交的文案; 如果这个字段不存在，会自动提示填写字段;
+* message: 提交的文案; 如果这个字段不存在，会自动提示填写字段;
 ```js
 {
     "type": "git-commit"
-    "content": "修改xxx文件"
+    "message": "修改xxx文件"
 }
 ```
