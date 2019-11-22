@@ -1,6 +1,6 @@
 {
   "name": "shell-deploy",
-  "version": "0.2.2",
+  "version": "0.2.4",
   "description": "",
   "main": "lib/index.js",
   "directories": {
@@ -9,7 +9,9 @@
   "bin": {
     "shell-deploy": "lib/index.js"
   },
-  "scripts": {},
+  "scripts": {
+    "commit": "npx shell-deploy commit"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {

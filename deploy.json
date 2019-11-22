@@ -1,0 +1,17 @@
+{
+  "actions": [
+    {
+      "name": "commit",
+      "infor": "提交代码",
+      "steps": [
+        {
+          "type": "git-pull"
+        },
+        {
+          "type": "git-commit",
+          "message": "提交说明"
+        }
+      ]
+    }
+  ]
+}
