@@ -4,9 +4,8 @@
 ### 快速开始
 使用`shell-deploy`模块分为三步
 1. 安装模块
-2. 创建`.deploy`配置文件
-3. 设置部署命令
-4. 执行部署命令
+2. 创建部署流程
+3. 执行部署命令
 
 
 #### 1.安装模块
@@ -14,34 +13,16 @@
 npm add shell-deploy
 ```
 
-#### 2.创建`.deploy`配置文件
+#### 2.创建部署流程
 
-在项目根目录创建`.deploy`配置文件，通过部署会涉及到多个场景，比如部署测试环境、部署线上环境等;  
+执行创建命令
+```js
+npx shell-deploy --create    
+```
+按照命令选择每一步内容
 
-每个场景都是一个`key/value`形式，`key`是场景名称，`value`是一个数组包含部署每一个步骤;
-比如下面配置文件，有`preview`和`online`两个场景;
-```
-{
-    "preview":[{
-        "type": "command",
-        "command": "yarn run test"
-    },{
-        "type": "upload",
-        "host": "10.152.81.208",
-        "username": "root",
-        "password": "****",
-        "path": "/usr/local/***",
-        "source": "./test/**"
-    }], 
-    "online": [{
-        "type": "copy",
-        "source": "./test/test1/a.js",
-        "dest": "./test/test2"
-    },{
-        "type": "git-commit"    
-    }]
-}
-```
+最终会生成一个`deploy.json`的配置文件, 同时会在`package`中创建相应的命令
+
 
 #### 3.设置部署命令
 
@@ -68,6 +49,32 @@ npm run online //部署到预览环境
 
 
 ### API描述
+
+每个场景都是一个`key/value`形式，`key`是场景名称，`value`是一个数组包含部署每一个步骤;
+比如下面配置文件，有`preview`和`online`两个场景;
+```
+{
+    "preview":[{
+        "type": "command",
+        "command": "yarn run test"
+    },{
+        "type": "upload",
+        "host": "10.152.81.208",
+        "username": "root",
+        "password": "****",
+        "path": "/usr/local/***",
+        "source": "./test/**"
+    }], 
+    "online": [{
+        "type": "copy",
+        "source": "./test/test1/a.js",
+        "dest": "./test/test2"
+    },{
+        "type": "git-commit"    
+    }]
+}
+```
+
 
 API列表:
 * upload
