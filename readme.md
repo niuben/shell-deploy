@@ -28,7 +28,7 @@ npx shell-deploy --create
 
 在`package.json`文件的`script`对象中增加部署命令
 
-```
+```js
 {
     ...
     script: {
@@ -81,6 +81,7 @@ API列表:
 * command
 * copy
 * cd 
+* delete
 * git-pull
 * git-commit
 
@@ -141,6 +142,14 @@ API列表:
     "path": "../test/" 
 }
 ```
+
+#### delete
+删除指定文件或者文件夹
+
+
+#### create
+创建指定文件或者文件夹
+
 
 #### git-pull
 通过`git pull`拉取代码

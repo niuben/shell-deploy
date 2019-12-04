@@ -10,7 +10,8 @@
     "shell-deploy": "lib/index.js"
   },
   "scripts": {
-    "commit": "npx shell-deploy commit"
+    "commit": "npx shell-deploy commit",
+    "upload": "npx shell-deploy upload"
   },
   "author": "",
   "license": "ISC",
