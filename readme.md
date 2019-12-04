@@ -23,23 +23,7 @@ npx shell-deploy --create
 
 最终会生成一个`deploy.json`的配置文件, 同时会在`package`中创建相应的命令
 
-
-#### 3.设置部署命令
-
-在`package.json`文件的`script`对象中增加部署命令
-
-```js
-{
-    ...
-    script: {
-        "preview": "npx shell-deploy preview",
-        "online": "npx shell-deploy online"
-    }
-    ...  
-}
-```
-
-#### 4.执行部署命令
+#### 3.执行部署命令
 
 运行
 ```js
