@@ -1,11 +1,13 @@
 ## shell-deploy
 使用配置文件完成代码部署
 
+
 ### 快速开始
 使用`shell-deploy`模块分为三步
 1. 安装模块
 2. 创建部署流程
 3. 执行部署命令
+
 
 
 #### 1.安装模块
@@ -30,6 +32,9 @@ npx shell-deploy --create
 npm run preview //部署到预览环境
 npm run online //部署到预览环境
 ```
+
+![演示gif图](./demo.gif)
+![演示gif图](./run.gif)
 
 
 ### API描述
