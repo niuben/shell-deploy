@@ -1,6 +1,6 @@
 {
   "name": "shell-deploy",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "快速创建和执行一个自动化任务",
   "main": "lib/index.js",
   "directories": {
