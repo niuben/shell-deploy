@@ -1,6 +1,6 @@
 {
   "name": "shell-deploy",
-  "version": "0.3.7",
+  "version": "0.4.0",
   "description": "快速创建和执行一个自动化任务",
   "main": "lib/index.js",
   "directories": {
@@ -9,10 +9,15 @@
   "bin": {
     "shell-deploy": "lib/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/niuben/shell-deploy"
+  },
   "scripts": {
     "test": "node ./test/index.js",
     "online": "npx shell-deploy online"
   },
+
   "keywords": [
     "Automation",
     "Task",
